@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PokeeDex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bangers&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./landing.css" type="text/css" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section class="poke-info">
+        <div class="poke-info__bubble">
+          <h2 class="poke-info__name" id="poke-name-display">
+            Who's there in the tall grass?!
+          </h2>
+        </div>
+      </section>
+      <section class="pokedex">
+        <div class="pokedex__container">
+          <div class="pokedex__top">
+            <div class="pokedex__bluecircle"></div>
+            <div class="pokedex__bluecircle--highlight"></div>
+            <div class="pokedex__smallcircle--red"></div>
+            <div class="pokedex__smallcircle--yellow"></div>
+            <div class="pokedex__smallcircle--green"></div>
+          </div>
+          <div class="pokedex__main">
+            <div class="pokedex__screen-border">
+              <div class="pokedex__screen">
+                <img
+                  src="./who_pokemon.0.jpg"
+                  alt=""
+                  id="pokedex-image"
+                  class="pokedex__image--cover"
+                />
+              </div>
+            </div>
+            <div class="pokedex__gamepad">
+              <button
+                type="button"
+                id="randomize-button"
+                class="pokedex__button"
+              >
+                Let's look!
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="poke-info">
+        <div class="poke-info__bubble">
+          <p class="poke-info__type" id="poke-types"></p>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="landing.js"></script>
+  </body>
+</html>
